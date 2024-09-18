@@ -10934,3 +10934,10 @@ footer.footer {
   place-items: center;
   gap: 0.5rem;
 }
+.logo-footer {
+  width: 150px;
+}
+
+.flex {
+  display: flex;
+}
