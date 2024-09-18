@@ -14,17 +14,74 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+        .nav-link {
+            font-size: 1.1em;
+            color: black;
+        }
+        .btn-custom {
+            background-color: #0b1a50;
+            color: white;
+            border-radius: 25px;
+            padding: 8px 20px;
+            font-size: 1em;
+        }
+        .btn-outline-custom {
+            border: 2px solid #0b1a50;
+            border-radius: 25px;
+            color: #0b1a50;
+            padding: 8px 20px;
+            font-size: 1em;
+        }
+        .navbar-brand img {
+            max-height: 40px;
+        }
+    </style>
     </head>
     <body>
         <!-- Navigation-->
-        <nav class="navbar navbar-light bg-light static-top">
+        <!-- <nav class="navbar navbar-light bg-light static-top">
             <div class="container">
                 <a class="navbar-brand" href="index.html">Accueil</a>
-                <a class="btn btn-primary" href="#signup">Sign Up</a>
                 <a class="btn btn-primary" href="/contact.html">Contact</a>
-                <a class="btn btn-primary" href="/mentions-legales.html">Mentions légales</a>
+                <a class="btn btn-primary" href="#signup">Sign Up</a>
             </div>
-        </nav>
+        </nav> -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="logo.png" alt="ECV logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">L'école</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Formations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Métiers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">International</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-custom" href="#">Documentation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-custom" href="#">Portes Ouvertes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-custom" href="#">Candidater</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
         <!-- Masthead-->
         <header class="masthead">
             <div class="container position-relative">
@@ -32,48 +89,26 @@
                     <div class="col-xl-6">
                         <div class="text-center text-white">
                             <!-- Page heading-->
-                            <h1 class="mb-5">Generate more leads with a professional landing page!</h1>
-                            <!-- Signup form-->
-                            <!-- * * * * * * * * * * * * * * *-->
-                            <!-- * * SB Forms Contact Form * *-->
-                            <!-- * * * * * * * * * * * * * * *-->
-                            <!-- This form is pre-integrated with SB Forms.-->
-                            <!-- To make this form functional, sign up at-->
-                            <!-- https://startbootstrap.com/solution/contact-forms-->
-                            <!-- to get an API token!-->
-                            <form class="form-subscribe" id="contactForm" data-sb-form-api-token="API_TOKEN">
-                                <!-- Email address input-->
-                                <div class="row">
-                                    <div class="col">
-                                        <input class="form-control form-control-lg" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-                                        <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:required">Email Address is required.</div>
-                                        <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
-                                    </div>
-                                    <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
-                                </div>
-                                <!-- Submit success message-->
-                                <!---->
-                                <!-- This is what your users will see when the form-->
-                                <!-- has successfully submitted-->
-                                <div class="d-none" id="submitSuccessMessage">
-                                    <div class="text-center mb-3">
-                                        <div class="fw-bolder">Form submission successful!</div>
-                                        <p>To activate this form, sign up at</p>
-                                        <a class="text-white" href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                    </div>
-                                </div>
-                                <!-- Submit error message-->
-                                <!---->
-                                <!-- This is what your users will see when there is-->
-                                <!-- an error submitting the form-->
-                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            </form>
+                            <h1 class="mb-5">Mentions Légales - Legal Notice</h1>
+                     
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </header>
         <main>
+        <hr class="modal-dialog-centered" > <h2> 1- Publication du Site Web </h2>
+ <p>Conformément à l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé aux utilisateurs des sites internet exploités par ECV l'identité des différents intervenants dans le cadre de leur réalisation et de leur suivi :
+
+    <ul>
+        <li>Propriétaire : ECV</li>
+        <li>Identification de la société</li>
+        <li>Adresse : 1 rue de la République 75001 Paris</li>
+        <li>Numéro de téléphone : 01 23 45 67 89</>
+ </ul> 
+
+        </hr>
 
         </main>
         <!-- Footer-->
@@ -82,15 +117,13 @@
                 <div class="row">
                     <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
                         <ul class="list-inline mb-2">
-                            <li class="list-inline-item"><a href="#!">About</a></li>
+                            <li class="list-inline-item"><a href="/index.htm">Home</a></li>
                             <li class="list-inline-item">⋅</li>
-                            <li class="list-inline-item"><a href="#!">Contact</a></li>
+                            <li class="list-inline-item"><a href="/contact.html">Contact</a></li>
                             <li class="list-inline-item">⋅</li>
-                            <li class="list-inline-item"><a href="#!">Terms of Use</a></li>
-                            <li class="list-inline-item">⋅</li>
-                            <li class="list-inline-item"><a href="#!">Privacy Policy</a></li>
+                            <li class="list-inline-item"><a href="/mentions-legales">Mentions Légales</a></li>
                         </ul>
-                        <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2023. All Rights Reserved.</p>
+                        <p class="text-muted small mb-4 mb-lg-0">&copy; 2024. All Rights Reserved.</p>
                     </div>
                     <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
                         <ul class="list-inline mb-0">
@@ -109,7 +142,7 @@
             </div>
         </footer>
         <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
@@ -117,5 +150,6 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
     </body>
 </html>
