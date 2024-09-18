@@ -25,28 +25,36 @@
                 <a class="btn btn-primary" href="/mentions-legales.html">Mentions légales</a>
             </div>
         </nav>
-        <main>
-            <h2>Contact Us !</h2>
-            <div>
-                <label for="email">Name</label>
-                <input id="email" type="text">
-            </div>
-            <div>
-                <label for="name">Email address</label>
-                <input id="name" type="email">
-            </div>
-            <div>
-                <label for="num">Contact number</label>
-                <input id="num" type="number">
-            </div>
-            <div>
-                <label for="msg">Message</label>
-                <textarea id="msg"></textarea>
-            </div>
-            <div>
-                <label for="newsletter">Email address</label>
-                <input id="newsletter" type="email">
-            </div>
+        <main class="contact-form">
+            <form action="submit" class="msg-form">
+                <h2>Contact Us !</h2>
+                <div class="input-div">
+                    <label for="email">Name</label>
+                    <input id="email" type="text">
+                </div>
+                <div class="input-div">
+                    <label for="name">Email address</label>
+                    <input id="name" type="email">
+                </div>
+                <div class="input-div">
+                    <label for="num">Contact number</label>
+                    <input id="num" type="number">
+                </div>
+                <div class="input-div">
+                    <label for="msg">Message</label>
+                    <textarea id="msg"></textarea>
+                </div>
+                <button>Send message →</button>
+            </form>
+            <form action="submit" class="news-form">
+                <h3>Join our newsletter</h3>
+                <p>Add your details and you’ll receive our quarterly email, including what’s happening with the wildlife, nature and communities around Lewa House.</p>
+                <div class="input-div">
+                    <label for="newsletter">Email address</label>
+                    <input id="newsletter" type="email">
+                </div>
+                <button>Sign up →</button>
+            </form>
         </main>
         <!-- Footer-->
         <footer class="footer bg-light">
