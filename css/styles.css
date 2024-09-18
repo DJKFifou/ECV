@@ -10917,3 +10917,20 @@ footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+
+/* --- Contact style --- */
+
+.contact-form {
+  display: grid;
+  place-items: center;
+  margin-block: 5rem;
+  gap: 3rem;
+}
+
+.msg-form,
+.news-form,
+.input-div {
+  display: grid;
+  place-items: center;
+  gap: 0.5rem;
+}
